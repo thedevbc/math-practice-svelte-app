@@ -13,7 +13,7 @@
 
 <style>
 	main {
-		flex: 1;
+		flex: 0 0 auto;
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
@@ -25,6 +25,7 @@
 
 	footer {
 		display: flex;
+		flex: 0 0 auto;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
