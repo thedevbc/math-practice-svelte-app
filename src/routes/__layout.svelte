@@ -2,6 +2,10 @@
 	import '../app.css';
 </script>
 
+<header>
+	<h1>Welcome to Math Practice</h1>
+</header>
+
 <main>
 	<slot />
 </main>
@@ -12,6 +16,18 @@
 </footer>
 
 <style>
+	header {
+		display: flex;
+		flex: 0 0 auto;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
 	main {
 		flex: 0 0 auto;
 		display: flex;
@@ -29,7 +45,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 40px;
 	}
 
 	@media (min-width: 480px) {
