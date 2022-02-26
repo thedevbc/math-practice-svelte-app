@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Svelte demo app" />
+		<link rel="icon" href="/math-practice-svelte-app/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content=""><title>Math Practice</title>
+	<link rel="stylesheet" href="/math-practice-svelte-app/_app/assets/pages/__layout.svelte-f4c07266.css">
+	<link rel="stylesheet" href="/math-practice-svelte-app/_app/assets/pages/index.svelte-e8472993.css">
+	<link rel="modulepreload" href="/math-practice-svelte-app/_app/start-5ca33c5e.js">
+	<link rel="modulepreload" href="/math-practice-svelte-app/_app/chunks/vendor-e04e2e87.js">
+	<link rel="modulepreload" href="/math-practice-svelte-app/_app/pages/__layout.svelte-be008750.js">
+	<link rel="modulepreload" href="/math-practice-svelte-app/_app/pages/index.svelte-ca7f2b8d.js">
+	</head>
+	<body>
+		<div class="sv-body">
+
+
+<header class="svelte-1ygg4nl"><h1 class="svelte-1ygg4nl">Welcome to Math Practice</h1></header>
+
+<main class="svelte-1ygg4nl">
+
+<section class="svelte-5wg606"><div class="problem svelte-5wg606"><h1 class="svelte-5wg606">990</h1>
+		<h1 class="operand-2 svelte-5wg606">- 949</h1>
+		<input class="border rounded-md mt-1 svelte-5wg606" type="tel" pattern="[0-9]+" value="">
+		<button class="mt-5 w-full bg-green-600 border border-transparent rounded-md py-3 flex items-center justify-center text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" type="submit">Check Answer</button>
+		<button class="mt-5 w-full bg-indigo-600 border border-transparent rounded-md py-3 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">New Problem</button>
+		<p class="result incorrect mt-5 svelte-5wg606">  </p>
+		<p class="result correct svelte-5wg606">Correct Answers: 0</p></div>
+</section></main>
+
+<footer class="svelte-1ygg4nl"><p>Have fun practicing 3-digit addition and subtraction!</p>
+	<p>Solve the problem on paper, then type in your answer and check it.</p>
+</footer>
+
+
+		<script type="module" data-hydrate="7uliu5">
+		import { start } from "/math-practice-svelte-app/_app/start-5ca33c5e.js";
+		start({
+			target: document.querySelector('[data-hydrate="7uliu5"]').parentNode,
+			paths: {"base":"/math-practice-svelte-app","assets":"/math-practice-svelte-app"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/math-practice-svelte-app/_app/pages/__layout.svelte-be008750.js"),
+						import("/math-practice-svelte-app/_app/pages/index.svelte-ca7f2b8d.js")
+				],
+				params: {}
+			}
+		});
+	</script></div>
+	</body>
+</html>
