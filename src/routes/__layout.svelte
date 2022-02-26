@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import github from '../../static/GitHub-Mark-32px.png';
 </script>
 
 <header class="my-20 px-14">
@@ -13,7 +14,7 @@
 </main>
 
 <footer class="my-20">
-	<p>Check out the code on <a href="https://github.com/thedevbc/math-practice-svelte-app">Github <img class="inline" src="./GitHub-Mark-32px.png" alt="GitHub icon"></a></p>
+	<p>Check out the code on <a href="https://github.com/thedevbc/math-practice-svelte-app">Github <img class="inline" src={github} alt="GitHub icon"></a></p>
 </footer>
 
 <style>
