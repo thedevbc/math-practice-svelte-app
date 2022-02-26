@@ -1,3 +1,6 @@
+This is another re-write of my Math Practice app using Svelte.
+The info below is from the Svelte starter template.
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).

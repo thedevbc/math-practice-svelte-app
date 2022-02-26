@@ -2,17 +2,18 @@
 	import '../app.css';
 </script>
 
-<header>
+<header class="my-20 px-14">
 	<h1>Welcome to Math Practice</h1>
+	<p>Have fun practicing 3-digit addition and subtraction!</p>
+	<p>Solve the problem on paper, then type in your answer and check it.</p>
 </header>
 
 <main>
 	<slot />
 </main>
 
-<footer>
-	<p>Have fun practicing 3-digit addition and subtraction!</p>
-	<p>Solve the problem on paper, then type in your answer and check it.</p>
+<footer class="my-20">
+	<p>Check out the code on <a href="https://github.com/thedevbc/math-practice-svelte-app">Github <img class="inline" src="./GitHub-Mark-32px.png" alt="GitHub icon"></a></p>
 </footer>
 
 <style>
@@ -24,17 +25,21 @@
 		align-items: center;
 	}
 
+	p {
+		font-size: 1rem;
+		text-align: center;
+	}
+
 	h1 {
 		font-size: 3rem;
+		text-align: center;
 	}
 
 	main {
 		flex: 0 0 auto;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
-		max-width: 1024px;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -47,9 +52,16 @@
 		align-items: center;
 	}
 
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
+	a {
+		color: blue;
 	}
+
+	a:visited {
+		color: indigo;
+	}
+
+	a:hover {
+		color: aqua;
+	}
+
 </style>
