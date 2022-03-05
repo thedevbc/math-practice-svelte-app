@@ -5,7 +5,6 @@
 <script lang="ts">
 	import { MathProblem } from '$lib/mathproblem';
 
-	let problem: MathProblem = new MathProblem();
 	let answer: string = '';
 	let isCorrect: boolean = false;
 	let correctCount: number = 0;
@@ -14,10 +13,10 @@
 	let subtraction = false;
 	let multiplication = false;
 	let digits: number = 3;
+	$:problem = new MathProblem(digits, modes);
 	$:modes = updateModesArr(addition,subtraction,multiplication);
 
 	function getNewProblem(event) {
-		console.log(modes);
 		problem = new MathProblem(digits, modes);
 		answer = '';
 		isCorrect = false;
@@ -77,11 +76,15 @@
 	// }
 
 	function updateModesArr(add: boolean, sub: boolean, mult: boolean): Array<'ADD' | 'SUB' | 'MULT'> {
+		if (!add && !sub && !mult) {
+			add = true;
+			addition = true;
+		}
+
 		let output = [];
 		if (add) {
 			output = [...output, 'ADD'];
-		}
-		if (sub) {
+		}		if (sub) {
 			output = [...output, 'SUB'];
 		}
 		if (mult) {
