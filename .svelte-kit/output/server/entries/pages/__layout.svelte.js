@@ -9,7 +9,7 @@ const css = {
 const _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<header class="${"my-20 px-14 svelte-dpc6sl"}"><h1 class="${"svelte-dpc6sl"}">Welcome to Math Practice</h1>
-	<p class="${"svelte-dpc6sl"}">Have fun practicing 3-digit addition and subtraction!</p>
+	<p class="${"svelte-dpc6sl"}">Have fun practicing addition, subtraction and simple multiplication!</p>
 	<p class="${"svelte-dpc6sl"}">Solve the problem on paper, then type in your answer and check it.</p></header>
 
 <main class="${"svelte-dpc6sl"}">${slots.default ? slots.default({}) : ``}</main>
