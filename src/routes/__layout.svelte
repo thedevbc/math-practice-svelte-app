@@ -5,7 +5,7 @@
 
 <header class="my-20 px-14">
 	<h1>Welcome to Math Practice</h1>
-	<p>Have fun practicing 3-digit addition and subtraction!</p>
+	<p>Have fun practicing addition, subtraction and simple multiplication!</p>
 	<p>Solve the problem on paper, then type in your answer and check it.</p>
 </header>
 
